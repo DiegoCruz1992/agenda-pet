@@ -11,9 +11,6 @@ export default {
 
     theme: {
         extend: {
-            fontFamily: {
-                roboto: ["Roboto", sans-serif],
-            },
             colors: {
                 Primario: {
                     100: '#E3FAF4',
@@ -42,6 +39,22 @@ export default {
                     300: '#fff, 20%',
                     400: '#fff, 40%',
                     500: '#fff, 80%',
+                },
+            },
+            backgroundColor: {
+                'bg-primario': {
+                    100: '#E3FAF4',
+                    200: '#A8EEE1',
+                    300: '#03BDBF',
+                    400: '#162C51',
+                    500: '#0B1F40',
+                },
+                'bg-secundario': {
+                    100: '#FFF5CE',
+                    200: '#FFCC5F',
+                    300: '#F8AB22',
+                    400: '#DB8224',
+                    500: '#70211F',
                 },
             }
         },
