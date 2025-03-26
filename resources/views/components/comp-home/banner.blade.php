@@ -1,4 +1,4 @@
-<section class="h-[350px]">
+<section>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">

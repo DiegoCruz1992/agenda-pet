@@ -8,7 +8,7 @@
                 <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-white pb-1 border-b-2 border-solid border-white' : 'text-gray-300 hover:text-white hover:duration-300 cursor-pointer' }}">Home</a>
             </li>
             <li class="inline-block mx-2">
-                <a href="#" class="{{ request()->is('sobre') ? 'text-white pb-1 border-b-2 border-solid border-white' : 'text-gray-300 hover:text-white hover:duration-300 cursor-pointer' }}">Sobre</a>
+                <a href="#" class="{{ request()->is('sobre') ? 'text-white pb-1 border-b-2 border-solid border-white' : 'text-gray-300 hover:text-white hover:duration-300 cursor-pointer' }}">Sobre Nós</a>
             </li>
             <li class="inline-block mx-2">
                 <a href="#" class="{{ request()->is('contato') ? 'text-white pb-1 border-b-2 border-solid border-white' : 'text-gray-300 hover:text-white hover:duration-300 cursor-pointer' }}">Contato</a>
