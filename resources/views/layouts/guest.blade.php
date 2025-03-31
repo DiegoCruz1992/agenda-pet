@@ -16,12 +16,12 @@
     </head>
     <body class="min-h-screen font-sans text-gray-900 antialiased flex items-center justify-center relative md:px-4">
         <img src="{{ asset('img/dog-banho.jpeg') }}" alt="imagem de fundo de um cachorro tomando banho" class="absolute inset-0 w-full h-full object-cover z-[-1]">
-        <div class="w-full h-screen md:h-auto md:w-[800px] flex justify-center gap-8 md:gap-0 flex-col md:grid md:grid-cols-2 rounded-lg shadow-md divide-x-2 divide-[#c1c1c1] border border-[#c1c1c1] bg-white bg-opacity-30 backdrop-blur-sm">
-            <div class="col-span-1 p-4 h-[30%] md:h-auto">
-                <img src="{{asset('logo-transparente.png')}}" alt="logo" class="w-full h-full object-cover md:object-contain">
+        <div class="w-full h-screen md:h-auto md:w-[800px] flex justify-center gap-0 flex-col md:grid md:grid-cols-2 rounded-lg shadow-md divide-x-2 divide-[#c1c1c1] border border-[#c1c1c1] bg-white bg-opacity-30 backdrop-blur-sm">
+            <div class="col-span-1 p-4 md:p-8 h-[30%] md:h-auto">
+                <img src="{{asset('logo-transparente.png')}}" alt="logo" class="w-full h-full object-contain">
             </div>
 
-            <div class="w-full col-span-1 px-4 md:px-4 bg-transparent flex flex-col items-center justify-center">
+            <div class="w-full col-span-1 px-4 md:px-8 bg-transparent flex flex-col items-center justify-center">
                 {{ $slot }}
             </div>
         </div>

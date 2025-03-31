@@ -63,29 +63,42 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                {{ __('Home') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('sobre')" :active="request()->routeIs('sobre')">
+                {{ __('Sobre') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
+                {{ __('Contato') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('agendamentos')" :active="request()->routeIs('agendamentos')">
+                {{ __('Agendamentos') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-200">
-            <div class="px-4">
-                <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                <div class="font-medium text-md text-gray-500">{{ Auth::user()->email }}</div>
-            </div>
-
-            <div class="mt-3 space-y-1">
-                <x-responsive-nav-link :href="route('profile.edit')">
+        <div class="bg-white p-4">
+            <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
+            <div class="font-medium text-md text-gray-500">{{ Auth::user()->email }}</div>
+            <div class="mt-3 flex items-center gap-4">
+                {{-- <x-responsive-nav-link :href="route('profile.edit')">
                     {{ __('Profile') }}
-                </x-responsive-nav-link>
+                </x-responsive-nav-link> --}}
+                <a class="black px-4 bg-[#162c51] text-white rounded-md" href="{{route('profile.edit')}}">Perfil</a>
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
-                    <x-responsive-nav-link :href="route('logout')"
+                    {{-- <x-responsive-nav-link :href="route('logout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
                         {{ __('Log Out') }}
-                    </x-responsive-nav-link>
+                    </x-responsive-nav-link> --}}
+                    <button type="submit" class="black px-4 bg-red-800 text-white rounded-md">
+                        {{ __('Deslogar') }}
+                    </button>
                 </form>
             </div>
         </div>

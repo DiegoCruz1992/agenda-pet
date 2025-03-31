@@ -12,6 +12,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
@@ -22,14 +23,14 @@
                 <!-- Page Heading -->
                 @if (isset($sidebar))
                     <aside class="bg-bg-primario-400 border-r-2 border-[#162c51] hidden md:block">
-                        <div class="min-h-screen flex-1 md:py-6 shadow w-48">
+                        <div class="min-h-screen flex-1 md:py-6 shadow min-w-40">
                             {{ $sidebar }}
                         </div>
                     </aside>
                 @endif
 
                 <!-- Page Content -->
-                <main class="bg-bg-primario-100 w-full p-4 md:p-8">
+                <main class="bg-bg-primario-100 w-full p-4">
                     {{ $slot }}
                 </main>
             </div>
