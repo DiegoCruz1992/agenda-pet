@@ -10,4 +10,19 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function historia()
+    {
+        return view('historia');
+    }
+
+    public function contato()
+    {
+        return view('contato');
+    }
+
+    public function agendamento()
+    {
+        return view('agendamento');
+    }
 }

@@ -63,16 +63,16 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">
+            <x-responsive-nav-link :href="route('dashboard.home')" :active="request()->routeIs('dashboard.home')">
                 {{ __('Home') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('sobre')" :active="request()->routeIs('sobre')">
-                {{ __('Sobre') }}
+            <x-responsive-nav-link :href="route('dashboard.history')" :active="request()->routeIs('dashboard.history')">
+                {{ __('Nossa história') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
+            <x-responsive-nav-link :href="route('dashboard.contato')" :active="request()->routeIs('dashboard.contato')">
                 {{ __('Contato') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('agendamentos')" :active="request()->routeIs('agendamentos')">
+            <x-responsive-nav-link :href="route('dashboard.agendamentos')" :active="request()->routeIs('dashboard.agendamentos')">
                 {{ __('Agendamentos') }}
             </x-responsive-nav-link>
         </div>
